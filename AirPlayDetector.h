@@ -8,10 +8,7 @@
 #import <MediaPlayer/MPMoviePlayerController.h>
 #import <MediaPlayer/MediaPlayer.h>
 
-/*
- * Notification made when [AirPlayDetector isAirPlayAvailable] changes
- */
-extern NSString *AirPlayAvailabilityChanged;
+#define AirPlayAvailabilityChanged @"AirPlayAvailabilityChanged"
 
 /*
  * Does the job of detecting whether this device can connect to an Apple TV or whatever using AirPlay.  It uses a hack with MPVolumeButton to overcome the fact that the framework has no properties or events for this information, which seems pretty silly to me.  
